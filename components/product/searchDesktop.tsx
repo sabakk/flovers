@@ -1,13 +1,9 @@
 "use client"
 
 import {
-    Calculator,
-    Calendar,
+
     Check,
-    CreditCard,
-    Settings,
-    Smile,
-    User,
+
   } from "lucide-react"
   
   import {
@@ -17,8 +13,7 @@ import {
     CommandInput,
     CommandItem,
     CommandList,
-    CommandSeparator,
-    CommandShortcut,
+ 
   } from "@/components/ui/command"
   import { ScrollArea } from "@/components/ui/scroll-area"
 import { data } from "@/types"

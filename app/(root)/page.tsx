@@ -1,7 +1,5 @@
 import  {SearchDesktop}  from "@/components/product/searchDesktop";
 import {ProductList} from "@/components/product/ProductList";
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import { SearchMobile } from "@/components/product/searchMobile";
 import { SortProduct } from "@/components/product/SortProduct";
 
