@@ -32,8 +32,8 @@ export function DrawerMenu() {
             </DrawerClose>
             </div>
             <DrawerHeader>
-            <DrawerTitle>Tatiana's flovers</DrawerTitle>
-            <DrawerDescription>Tatiana's flovers</DrawerDescription>
+            <DrawerTitle>Tatiana`&apos;`s flovers</DrawerTitle>
+            <DrawerDescription>Tatiana`&apos;`s flovers</DrawerDescription>
           </DrawerHeader>
          
       
