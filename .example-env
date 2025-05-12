@@ -1,3 +1,4 @@
 NEXT_PUBLIC_APP_NAME = "Flaverstore"
 NEXT_PUBLIC_APP_DESCRIPTION = "Flowers delivery"
 NEXT_PUBLIC_SERVER_URL = "http://localhost:3000"
+DATABASE_URL

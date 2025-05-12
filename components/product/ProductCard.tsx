@@ -16,7 +16,7 @@ export const ProductCard = ({ product }: { product: Product }) => {
   return (
     <Card className="w-full max-w-sm">
       <CardHeader className="grid justify-items-center">
-      <Link href={`/product/${product.slug}`}>
+      <Link href={`/flovers/${product.slug}`}>
           <Image
             src={product.images}
             alt={product.name}
@@ -33,8 +33,13 @@ export const ProductCard = ({ product }: { product: Product }) => {
       </CardContent>
       <CardFooter className="flex flex-col">
       <p className='text-lg font-medium pb-5'>{product.price}</p>
-        <Button variant="default" className="w-full">Order</Button>
+        
+
+<Button asChild  variant="default" className="w-full">
+  <Link href={`/flovers/${product.slug}`}>Order</Link>
+</Button>
       </CardFooter>
+      
     </Card>
   )
 }

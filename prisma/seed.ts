@@ -3,42 +3,34 @@ import { withAccelerate } from '@prisma/extension-accelerate'
 
 const prisma = new PrismaClient().$extends(withAccelerate())
 
-const userData: Prisma.UserCreateInput[] = [
-  {
-    name: 'Alice',
-    email: 'alice@prisma.io',
-    posts: {
-      create: [
-        {
-          title: 'Join the Prisma Discord',
-          content: 'https://pris.ly/discord',
-          published: true,
-        },
-        {
-          title: 'Prisma on YouTube',
-          content: 'https://pris.ly/youtube',
-        },
-      ],
+const productData: Prisma.ProductCreateInput[] = [
+ {
+      name: 'Flover1',
+      slug: '1',
+      category: "Flover1",
+      description: 'Best flover for your garden',
+      image: "https://i.pinimg.com/736x/2e/cf/06/2ecf067a2069128f44d75d25a32e219e.jpg",
+      price: 59.99,
+      // numReviews: 10,
+      stock: 5,
+      isFeatured: true,
     },
-  },
-  {
-    name: 'Bob',
-    email: 'bob@prisma.io',
-    posts: {
-      create: [
-        {
-          title: 'Follow Prisma on Twitter',
-          content: 'https://www.twitter.com/prisma',
-          published: true,
-        },
-      ],
+    {
+      name: 'Rose',
+      slug: '2',
+      category: "Flover2",
+      description: 'Best flover for your garden',
+      image: "https://i.pinimg.com/736x/2e/cf/06/2ecf067a2069128f44d75d25a32e219e.jpg",
+      price: 85.9,
+      // numReviews: 8,
+      stock: 10,
+      isFeatured: true,
     },
-  }
 ]
 
 export async function main() {
-  for (const u of userData) {
-    await prisma.user.create({ data: u })
+  for (const p of productData) {
+    await prisma.product.create({ data: p })
   }
 }
 

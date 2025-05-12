@@ -11,13 +11,13 @@ export default function NewPost() {
     const title = formData.get("title") as string;
     const content = formData.get("content") as string;
 
-    await prisma.post.create({
-      data: {
-        title,
-        content,
-        authorId: 1,
-      },
-    });
+    // await prisma.product.create({
+    //   data: {
+    //     title,
+    //     content,
+    //     authorId: 1,
+    //   },
+    // });
 
     revalidatePath("/");
     redirect("/");

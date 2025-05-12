@@ -5,7 +5,7 @@ import { SortProduct } from "@/components/product/SortProduct";
 
 export default function Home() {
   return (
-   <div className="max-w-7xl lg:mx-auto grid sm:grid-cols-4 sm:gap-5  min-h-full my-5">
+   <div className=" lg:mx-auto grid sm:grid-cols-4 sm:gap-5  min-h-full my-5">
     <div className="sm:hidden flex justify-between">
       <SearchMobile/>
     <SortProduct/>
